@@ -1,0 +1,16 @@
+{
+    "type": "neoforge:add_features",
+    "biomes": "#c:is_overworld",
+    "features": ["juiceofthefruits:blackberry_bush_placed",
+        "juiceofthefruits:blackcurrant_bush_placed",
+        "juiceofthefruits:blueberry_bush_placed",
+        "juiceofthefruits:cherry_bush_placed",
+        "juiceofthefruits:lemon_bush_placed",
+        "juiceofthefruits:lime_bush_placed",
+        "juiceofthefruits:mango_bush_placed",
+        "juiceofthefruits:orange_bush_placed",
+        "juiceofthefruits:pear_bush_placed",
+        "juiceofthefruits:redcurrant_bush_placed",
+        "juiceofthefruits:strawberry_bush_placed"],
+    "steps": ["vegetal_decoration"]
+}

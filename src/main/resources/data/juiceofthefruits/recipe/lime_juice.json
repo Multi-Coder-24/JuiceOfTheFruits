@@ -3,7 +3,7 @@
   "category": "food",
   "ingredients": [
     {
-      "item": "minecraft:potion"
+      "item": "minecraft:glass_bottle"
     },
     {
       "item": "juiceofthefruits:lime"

@@ -38,6 +38,23 @@ public class Main {
             event.accept(ModItems.PEAR);
             event.accept(ModItems.REDCURRANT);
             event.accept(ModItems.STRAWBERRY);
+            event.accept(ModItems.DRAGON_FRUIT);
+            event.accept(ModItems.APRICOT);
+            event.accept(ModItems.CRANBERRY);
+            event.accept(ModItems.ELDERBERRY);
+            event.accept(ModItems.FIG);
+            event.accept(ModItems.GOOSEBERRY);
+            event.accept(ModItems.GRAPEFRUIT);
+            event.accept(ModItems.GUAVA);
+            event.accept(ModItems.JACK_FRUIT);
+            event.accept(ModItems.KIWI);
+            event.accept(ModItems.NECTARINE);
+            event.accept(ModItems.PAPAYA);
+            event.accept(ModItems.PASSION_FRUIT);
+            event.accept(ModItems.PINEAPPLE);
+            event.accept(ModItems.PLUM);
+            event.accept(ModItems.STAR_FRUIT);
+            event.accept(ModItems.YUZU);
 
             event.accept(ModItems.BLACKBERRY_JUICE);
             event.accept(ModItems.BLACKCURRANT_JUICE);
@@ -50,6 +67,23 @@ public class Main {
             event.accept(ModItems.PEAR_JUICE);
             event.accept(ModItems.REDCURRANT_JUICE);
             event.accept(ModItems.STRAWBERRY_JUICE);
+            event.accept(ModItems.DRAGON_FRUIT_JUICE);
+            event.accept(ModItems.APRICOT_JUICE);
+            event.accept(ModItems.CRANBERRY_JUICE);
+            event.accept(ModItems.ELDERBERRY_JUICE);
+            event.accept(ModItems.FIG_JUICE);
+            event.accept(ModItems.GOOSEBERRY_JUICE);
+            event.accept(ModItems.GRAPEFRUIT_JUICE);
+            event.accept(ModItems.GUAVA_JUICE);
+            event.accept(ModItems.JACK_FRUIT_JUICE);
+            event.accept(ModItems.KIWI_JUICE);
+            event.accept(ModItems.NECTARINE_JUICE);
+            event.accept(ModItems.PAPAYA_JUICE);
+            event.accept(ModItems.PASSION_FRUIT_JUICE);
+            event.accept(ModItems.PINEAPPLE_JUICE);
+            event.accept(ModItems.PLUM_JUICE);
+            event.accept(ModItems.STAR_FRUIT_JUICE);
+            event.accept(ModItems.YUZU_JUICE);
         }
     }
 }

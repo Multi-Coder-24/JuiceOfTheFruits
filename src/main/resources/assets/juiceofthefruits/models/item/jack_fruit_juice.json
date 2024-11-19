@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "juiceofthefruits:item/jack_fruit_juice"
+  }
+}

@@ -1,10 +1,12 @@
 package org.multicoder.juiceofthefruits.common.block;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Holder;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
@@ -15,18 +17,18 @@ import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.BlockHitResult;
-import org.multicoder.juiceofthefruits.common.init.ModItems;
 
-public class PlumBushBlock extends SweetBerryBushBlock
+public class BaseBushBlock extends SweetBerryBushBlock
 {
-    public PlumBushBlock()
+    private Holder<Item> BaseItem;
+    public BaseBushBlock(Holder<Item> baseItem)
     {
         super(Properties.of().mapColor(MapColor.PLANT).sound(SoundType.SWEET_BERRY_BUSH).pushReaction(PushReaction.DESTROY).noCollission().noOcclusion());
+        BaseItem = baseItem;
     }
-
     @Override
     public ItemStack getCloneItemStack(LevelReader p_304655_, BlockPos p_57257_, BlockState p_57258_) {
-        return new ItemStack(ModItems.PLUM.get());
+        return new ItemStack(BaseItem.value());
     }
 
     @Override
@@ -35,10 +37,8 @@ public class PlumBushBlock extends SweetBerryBushBlock
         boolean flag = i == 3;
         if (i > 1) {
             int j = 1 + p_316429_.random.nextInt(2);
-            popResource(p_316429_, p_316748_, new ItemStack(ModItems.PLUM.get(), j + (flag ? 1 : 0)));
-            p_316429_.playSound(
-                    null, p_316748_, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, 0.8F + p_316429_.random.nextFloat() * 0.4F
-            );
+            popResource(p_316429_, p_316748_, new ItemStack(BaseItem.value(), j + (flag ? 1 : 0)));
+            p_316429_.playSound(null, p_316748_, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, 0.8F + p_316429_.random.nextFloat() * 0.4F);
             BlockState blockstate = p_316134_.setValue(AGE, Integer.valueOf(1));
             p_316429_.setBlock(p_316748_, blockstate, 2);
             p_316429_.gameEvent(GameEvent.BLOCK_CHANGE, p_316748_, GameEvent.Context.of(p_316431_, blockstate));

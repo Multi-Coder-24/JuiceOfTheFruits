@@ -1,6 +1,7 @@
 package org.multicoder.juiceofthefruits.common.init;
 
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -15,34 +16,34 @@ public class ModItems
 {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.createItems(Juiceofthefruits.MODID);
 
-    public static final DeferredHolder<Item,Item> BLACKBERRY = ITEMS.register("blackberry",() -> new ItemNameBlockItem(ModBlocks.BLACKBERRY_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> BLACKCURRANT = ITEMS.register("blackcurrant",() -> new ItemNameBlockItem(ModBlocks.BLACKCURRANT_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> BLUEBERRY = ITEMS.register("blueberry",() -> new ItemNameBlockItem(ModBlocks.BLUEBERRY_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> CHERRY = ITEMS.register("cherry",() -> new ItemNameBlockItem(ModBlocks.CHERRY_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> LEMON = ITEMS.register("lemon",() -> new ItemNameBlockItem(ModBlocks.LEMON_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> LIME = ITEMS.register("lime",() -> new ItemNameBlockItem(ModBlocks.LIME_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> MANGO = ITEMS.register("mango",() -> new ItemNameBlockItem(ModBlocks.MANGO_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> ORANGE = ITEMS.register("orange",() -> new ItemNameBlockItem(ModBlocks.ORANGE_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> PEAR = ITEMS.register("pear",() -> new ItemNameBlockItem(ModBlocks.PEAR_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> REDCURRANT = ITEMS.register("redcurrant",() -> new ItemNameBlockItem(ModBlocks.REDCURRANT_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> STRAWBERRY = ITEMS.register("strawberry",() -> new ItemNameBlockItem(ModBlocks.STRAWBERRY_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> DRAGON_FRUIT = ITEMS.register("dragon_fruit",() -> new ItemNameBlockItem(ModBlocks.DRAGON_FRUIT_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> APRICOT = ITEMS.register("apricot",() -> new ItemNameBlockItem(ModBlocks.APRICOT_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> CRANBERRY = ITEMS.register("cranberry",() -> new ItemNameBlockItem(ModBlocks.CRANBERRY_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> ELDERBERRY = ITEMS.register("elderberry",() -> new ItemNameBlockItem(ModBlocks.ELDERBERRY_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> FIG = ITEMS.register("fig",() -> new ItemNameBlockItem(ModBlocks.FIG_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> GOOSEBERRY = ITEMS.register("gooseberry",() -> new ItemNameBlockItem(ModBlocks.GOOSEBERRY_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> GRAPEFRUIT = ITEMS.register("grapefruit",() -> new ItemNameBlockItem(ModBlocks.GRAPEFRUIT_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> GUAVA = ITEMS.register("guava",() -> new ItemNameBlockItem(ModBlocks.GUAVA_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> JACK_FRUIT = ITEMS.register("jack_fruit",() -> new ItemNameBlockItem(ModBlocks.JACK_FRUIT_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> KIWI = ITEMS.register("kiwi",() -> new ItemNameBlockItem(ModBlocks.KIWI_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> NECTARINE = ITEMS.register("nectarine",() -> new ItemNameBlockItem(ModBlocks.NECTARINE_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> PAPAYA = ITEMS.register("papaya",() -> new ItemNameBlockItem(ModBlocks.PAPAYA_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> PASSION_FRUIT = ITEMS.register("passion_fruit",() -> new ItemNameBlockItem(ModBlocks.PASSION_FRUIT_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> PINEAPPLE = ITEMS.register("pineapple",() -> new ItemNameBlockItem(ModBlocks.PINEAPPLE_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> PLUM = ITEMS.register("plum",() -> new ItemNameBlockItem(ModBlocks.PLUM_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> STAR_FRUIT = ITEMS.register("star_fruit",() -> new ItemNameBlockItem(ModBlocks.STAR_FRUIT_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
-    public static final DeferredHolder<Item,Item> YUZU = ITEMS.register("yuzu",() -> new ItemNameBlockItem(ModBlocks.YUZU_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> BLACKBERRY = ITEMS.register("blackberry",() -> new BlockItem(ModBlocks.BLACKBERRY_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> BLACKCURRANT = ITEMS.register("blackcurrant",() -> new BlockItem(ModBlocks.BLACKCURRANT_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> BLUEBERRY = ITEMS.register("blueberry",() -> new BlockItem(ModBlocks.BLUEBERRY_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> CHERRY = ITEMS.register("cherry",() -> new BlockItem(ModBlocks.CHERRY_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> LEMON = ITEMS.register("lemon",() -> new BlockItem(ModBlocks.LEMON_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> LIME = ITEMS.register("lime",() -> new BlockItem(ModBlocks.LIME_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> MANGO = ITEMS.register("mango",() -> new BlockItem(ModBlocks.MANGO_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> ORANGE = ITEMS.register("orange",() -> new BlockItem(ModBlocks.ORANGE_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> PEAR = ITEMS.register("pear",() -> new BlockItem(ModBlocks.PEAR_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> REDCURRANT = ITEMS.register("redcurrant",() -> new BlockItem(ModBlocks.REDCURRANT_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> STRAWBERRY = ITEMS.register("strawberry",() -> new BlockItem(ModBlocks.STRAWBERRY_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> DRAGON_FRUIT = ITEMS.register("dragon_fruit",() -> new BlockItem(ModBlocks.DRAGON_FRUIT_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> APRICOT = ITEMS.register("apricot",() -> new BlockItem(ModBlocks.APRICOT_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> CRANBERRY = ITEMS.register("cranberry",() -> new BlockItem(ModBlocks.CRANBERRY_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> ELDERBERRY = ITEMS.register("elderberry",() -> new BlockItem(ModBlocks.ELDERBERRY_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> FIG = ITEMS.register("fig",() -> new BlockItem(ModBlocks.FIG_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> GOOSEBERRY = ITEMS.register("gooseberry",() -> new BlockItem(ModBlocks.GOOSEBERRY_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> GRAPEFRUIT = ITEMS.register("grapefruit",() -> new BlockItem(ModBlocks.GRAPEFRUIT_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> GUAVA = ITEMS.register("guava",() -> new BlockItem(ModBlocks.GUAVA_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> JACK_FRUIT = ITEMS.register("jack_fruit",() -> new BlockItem(ModBlocks.JACK_FRUIT_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> KIWI = ITEMS.register("kiwi",() -> new BlockItem(ModBlocks.KIWI_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> NECTARINE = ITEMS.register("nectarine",() -> new BlockItem(ModBlocks.NECTARINE_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> PAPAYA = ITEMS.register("papaya",() -> new BlockItem(ModBlocks.PAPAYA_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> PASSION_FRUIT = ITEMS.register("passion_fruit",() -> new BlockItem(ModBlocks.PASSION_FRUIT_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> PINEAPPLE = ITEMS.register("pineapple",() -> new BlockItem(ModBlocks.PINEAPPLE_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> PLUM = ITEMS.register("plum",() -> new BlockItem(ModBlocks.PLUM_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> STAR_FRUIT = ITEMS.register("star_fruit",() -> new BlockItem(ModBlocks.STAR_FRUIT_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
+    public static DeferredHolder<Item,Item> YUZU = ITEMS.register("yuzu",() -> new BlockItem(ModBlocks.YUZU_BUSH.get(),new Item.Properties().food(new FoodProperties(6,0.8f,true,1f, Optional.empty(),new ArrayList<>()))));
 
     public static final DeferredHolder<Item,Item> BLACKBERRY_JUICE = ITEMS.register("blackberry_juice", ItemDrinkable::new);
     public static final DeferredHolder<Item,Item> BLACKCURRANT_JUICE = ITEMS.register("blackcurrant_juice", ItemDrinkable::new);
@@ -72,6 +73,5 @@ public class ModItems
     public static final DeferredHolder<Item,Item> PLUM_JUICE = ITEMS.register("plum_juice", ItemDrinkable::new);
     public static final DeferredHolder<Item,Item> STAR_FRUIT_JUICE = ITEMS.register("star_fruit_juice", ItemDrinkable::new);
     public static final DeferredHolder<Item,Item> YUZU_JUICE = ITEMS.register("yuzu_juice", ItemDrinkable::new);
-
 
 }

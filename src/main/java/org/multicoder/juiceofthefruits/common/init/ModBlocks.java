@@ -1,7 +1,6 @@
 package org.multicoder.juiceofthefruits.common.init;
 
 import net.minecraft.world.level.block.Block;
-import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import org.multicoder.juiceofthefruits.Juiceofthefruits;

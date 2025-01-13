@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "juiceofthefruits:apricot"
+
+    }
+  ],
+  "result": {
+    "id": "juiceofthefruits:apricot_juice",
+    "count": 1
+  }
+}

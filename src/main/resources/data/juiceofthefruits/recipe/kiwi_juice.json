@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "juiceofthefruits:kiwi"
+
+    }
+  ],
+  "result": {
+    "id": "juiceofthefruits:kiwi_juice",
+    "count": 1
+  }
+}

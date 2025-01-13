@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": ["minecraft:glass_bottle", "juiceofthefruits:passion_fruit"],
+  "result": {
+    "id": "juiceofthefruits:passion_fruit_juice",
+    "count": 1
+  }
+}

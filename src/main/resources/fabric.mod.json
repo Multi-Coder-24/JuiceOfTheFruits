@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "juiceofthefruits",
+	"version": "${version}",
+	"name": "JuiceOfTheFruits",
+	"description": "",
+	"authors": [
+		"Multicoder"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/juice-of-the-fruits",
+		"sources": "https://github.com/Multi-Coder-24/JuiceOfTheFruits"
+	},
+	"license": "MIT",
+	"icon": "assets/juiceofthefruits/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"org.multicoder.jotf.JuiceOfTheFruits"
+		],
+		"fabric-datagen": [
+			"org.multicoder.jotf.JuiceOfTheFruitsDataGenerator"
+		]
+	},
+	"mixins": [
+		"juiceofthefruits.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.2",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
